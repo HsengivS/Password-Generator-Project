@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>My first Django 3.0 Page</title>
+    <style media="screen">
+      .mystyle{text-align: center;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="mystyle">Welcome to the password generator</h1>
+    <!-- <br>
+    <h6><a href="{% url 'about' %}">About Password Generator</a></h6>
+    <br> -->
+    <form class="mystyle" action="password">
+      <div class="alert alert-success">
+      <select name="length">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <br>
+      </select> Length
+      <br>
+      <input type="checkbox" name="uppercase"> Uppercase
+      <br>
+      <input type="checkbox" name="numbers"> Numbers
+      <br>
+      <input type="checkbox" name="special"> Special Characters
+      <br>
+      <input type="submit" value="Generate Password" class="btn btn-primary">
+    </form>
+  </div>
+</div>
+
+  </body>
+</html>
